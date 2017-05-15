@@ -1,0 +1,46 @@
+<!-- This is a Calculator, coded using AnularJS
+     Author: Parvaneh Sadeghi
+     Date: May 2017 -->
+
+<!DOCTYPE html>
+<html>
+<title>Calculator with AngularJS</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="app.js"></script>
+</head>
+<body >
+<div ng-app="myApp" ng-controller="myCtrl">
+    <h1 id="title"><center>Calculator</center></h1>
+    <br><br>
+    <div class="section1">
+        <input type="text" id="screen" name="screen" ng-model="result" placeholder='0' >
+        <br>   
+        <input type="button" value="C" ng-click="clear()" style="width:200px"/>
+        <input type="button" value="/" ng-model=value ng-click="display(14) "/>
+        <br>
+        <input type="button" value="7" ng-model=value ng-click="display(7)" />
+        <input type="button" value="8" ng-model=value ng-click="display(8)"/>
+        <input type="button" value="9" ng-model=value ng-click="display(9)"/>
+        <input type="button" value="*" ng-model=value ng-click="display(13)"/>
+        <br>
+        <input type="button" value="4" ng-model=value ng-click="display(4)"/>
+        <input type="button" value="5" ng-model=value ng-click="display(5)"/>
+        <input type="button" value="6" ng-model=value ng-click="display(6)" />
+        <input type="button" value="-" ng-model=value ng-click="display(12)"/>
+        <br>
+        <input type="button" value="1" ng-model=value ng-click="display(1)"/>
+        <input type="button" value="2" ng-model=value ng-click="display(2)"/>
+        <input type="button" value="3" ng-model=value ng-click="display(3)"/>
+        <input type="button" value="+" ng-model=value ng-click="display(11)"/>
+        <br>
+        <input type="button" value="0" ng-model=value ng-click="display(0)" style="width:130px">
+        <input type="button" value="." ng-model=value ng-click="display(10)"/>
+        <input type="button" value="=" ng-click="equal()"/>
+        <br>
+    </div> 
+</div>
+</body>
+</html>
