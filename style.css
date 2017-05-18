@@ -1,20 +1,32 @@
 body{
-	background-color: #F5DEB3;
+	background-color: #FFCC99;
 }
 
 #title{
 	margin: auto;
 	text-decoration-color: red;
-	font-size: 60px;
+	font: bold 60px  arial, sans-serif;
 }
 
-.section1{
+div#header {
+    width: 400px;
+    height: 120px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #CC9966;
+    box-shadow: 10px 10px 5px grey;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.calc{
 	
 	padding: 3px;
 	margin: 3px;
 	width : 300px;
 	height: 50%;
 	margin: auto;
+
 }
 
 input{

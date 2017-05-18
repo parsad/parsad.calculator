@@ -3,9 +3,10 @@
      Date: May 2017 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <title>Calculator with AngularJS</title>
 <head>
+    <meta charset = "utf-8">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
     <link rel="stylesheet" type="text/css" href="style.css"/>
@@ -13,9 +14,10 @@
 </head>
 <body >
 <div ng-app="myApp" ng-controller="myCtrl">
-    <h1 id="title"><center>Calculator</center></h1>
+    
+    <div id="header"> <h1 id="title"><center>Calculator</center></h1> </div>
     <br><br>
-    <div class="section1">
+    <div class="calc">
         <input type="text" id="screen" name="screen" ng-model="result" placeholder='0' >
         <br>   
         <input type="button" value="C" ng-click="clear()" style="width:200px"/>
